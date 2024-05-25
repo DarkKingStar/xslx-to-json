@@ -1,13 +1,6 @@
 const XLSX = require('xlsx');
 const fs = require('fs');
 
-
-
-
-
-
-// how to start reading from a particular row of the excel
-
 function xlsxtojson(start, filename){
     const finalObject = {};
     const myFile = fs.readFileSync(`./${filename}.xlsx`);
